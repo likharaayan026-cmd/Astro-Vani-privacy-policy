@@ -1,0 +1,569 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#f6f8ff">
+<meta name="description" content="Privacy Policy, Disclaimer and Terms of Use. Learn how information is handled and protected.">
+<title>Privacy Policy</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  touch-action: pan-y;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Arial, sans-serif;
+  background: #f6f8ff;
+  color: #182033;
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:active {
+  opacity: .7;
+}
+
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, #6366f1, #06b6d4);
+  z-index: 999;
+}
+
+header {
+  padding: 16px 20px;
+  background: rgba(255,255,255,.9);
+  border-bottom: 1px solid #e8ebf4;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(14px);
+}
+
+.nav {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 22px;
+  background: linear-gradient(135deg,#6366f1,#06b6d4);
+  box-shadow: 0 5px 15px #6366f133;
+}
+
+.brand {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #737c90;
+}
+
+.hero {
+  max-width: 900px;
+  margin: 30px auto 22px;
+  padding: 0 18px;
+  animation: slideUp .7s ease both;
+}
+
+.tag {
+  display: inline-block;
+  background: #e8eaff;
+  color: #4f46e5;
+  padding: 5px 12px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: clamp(30px, 7vw, 46px);
+  line-height: 1.2;
+  letter-spacing: -1.3px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  color: #657087;
+  font-size: 15px;
+}
+
+.updated {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 7px 12px;
+  border: 1px solid #e2e6f0;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 12px;
+  color: #657087;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 18px 45px;
+}
+
+.notice {
+  padding: 17px;
+  margin-bottom: 18px;
+  border: 1px solid #dfe3ff;
+  border-radius: 17px;
+  background: linear-gradient(135deg,#ffffff,#f0f3ff);
+  animation: slideUp .7s ease both;
+}
+
+.notice strong {
+  display: block;
+  color: #4338ca;
+  margin-bottom: 4px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e8ebf3;
+  padding: 23px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  box-shadow: 0 7px 25px rgba(30,45,90,.035);
+  animation: slideUp .6s ease both;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.card:active {
+  transform: scale(.99);
+}
+
+h2 {
+  font-size: 19px;
+  margin-bottom: 11px;
+  letter-spacing: -.3px;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #58647a;
+  font-size: 14px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 20px;
+  color: #58647a;
+  font-size: 14px;
+}
+
+li {
+  padding: 3px 0;
+}
+
+footer {
+  background: white;
+  border-top: 1px solid #e8ebf3;
+  padding: 27px 18px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+.footer-title {
+  font-weight: 800;
+  color: #182033;
+  margin-bottom: 5px;
+}
+
+.backtop {
+  position: fixed;
+  right: 18px;
+  bottom: 20px;
+  border: none;
+  border-radius: 15px;
+  width: 46px;
+  height: 46px;
+  background: #4f46e5;
+  color: white;
+  font-size: 21px;
+  box-shadow: 0 6px 20px #4f46e144;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s;
+}
+
+.backtop.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (min-width: 700px) {
+  .hero { margin-top: 48px; }
+  .card { padding: 28px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="progress" id="progress"></div>
+
+<header>
+  <div class="nav">
+    <div class="logo">✦</div>
+    <div>
+      <div class="brand">Privacy Center</div>
+      <div class="subtitle">Privacy · Safety · Transparency</div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <span class="tag">YOUR PRIVACY MATTERS</span>
+  <h1>Privacy Policy<span style="color:#6366f1">.</span></h1>
+  <p>
+    This page explains how information may be collected, used,
+    stored and protected when you use our application or services.
+  </p>
+  <div class="updated">Last updated: October 25, 2026</div>
+</section>
+
+<main class="container">
+
+  <div class="notice">
+    <strong>🔒 Our Privacy Commitment</strong>
+    <p>
+      We aim to handle personal information responsibly and
+      transparently. Please read this policy carefully to understand
+      your privacy choices and responsibilities.
+    </p>
+  </div>
+
+  <section class="card">
+    <h2>1. Introduction</h2>
+    <p>
+      This Privacy Policy describes the general privacy practices
+      applicable to this application and its associated services.
+      By using the application, you acknowledge that you have read
+      this policy.
+    </p>
+    <p>
+      The actual information processed depends on the application's
+      features, permissions, configuration and services you choose
+      to use.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>2. Information We May Collect</h2>
+    <p>Depending on the features you use, the application may process:</p>
+    <ul>
+      <li><b>Account information:</b> name, email address, or other details you submit.</li>
+      <li><b>Usage information:</b> interactions, preferences, diagnostics and crash reports.</li>
+      <li><b>Device information:</b> device type, operating system and app version.</li>
+      <li><b>Information you provide:</b> messages, forms, or content you voluntarily submit.</li>
+      <li><b>Technical information:</b> limited logs needed to maintain security and reliability.</li>
+    </ul>
+    <p>
+      We do not claim that every category listed above is collected.
+      Only categories actually processed by the deployed application
+      should be retained in this policy.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>3. How Information May Be Used</h2>
+    <p>Information may be used, where applicable, to:</p>
+    <ul>
+      <li>Provide and maintain application features.</li>
+      <li>Create and manage user accounts.</li>
+      <li>Save user preferences and settings.</li>
+      <li>Respond to support requests.</li>
+      <li>Identify errors, prevent abuse and improve security.</li>
+      <li>Meet applicable legal obligations.</li>
+    </ul>
+    <p>
+      We do not promise that information is used for a particular
+      purpose unless that purpose is relevant to the actual service.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>4. Data Storage and Security</h2>
+    <p>
+      Information may be stored locally on your device or processed
+      by configured third-party infrastructure. Storage arrangements
+      depend on the features and services enabled in the application.
+    </p>
+    <p>
+      Reasonable safeguards should be used to protect information
+      against unauthorized access, alteration, loss or disclosure.
+      However, no electronic storage or internet transmission can
+      be guaranteed to be completely secure.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>5. Third-Party Services</h2>
+    <p>
+      The application may rely on third-party services for functions
+      such as authentication, hosting, analytics, crash reporting,
+      payments or notifications, if those services are integrated.
+    </p>
+    <p>
+      Such providers may process information under their own privacy
+      policies and terms. Review the policies of any providers
+      actually used by the application before publishing this page.
+    </p>
+    <p>
+      This policy does not imply that any particular third-party
+      service is integrated or endorsed.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>6. Sharing and Disclosure</h2>
+    <p>
+      Personal information should only be shared when necessary to
+      deliver requested features, with applicable service providers,
+      with your direction or consent where required, or when
+      disclosure is legally required.
+    </p>
+    <p>
+      We do not represent that information is never shared. Actual
+      data-sharing practices must match the application's operation
+      and its third-party integrations.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>7. Permissions and Device Access</h2>
+    <p>
+      Some features may request device permissions, such as access
+      to photos, files, camera, notifications or other device
+      functions. Permissions should be requested only when needed
+      for the relevant feature.
+    </p>
+    <p>
+      You can manage available permissions through your device
+      settings. Disabling a permission may prevent the associated
+      feature from working.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>8. Data Retention and Deletion</h2>
+    <p>
+      Information should be retained only for as long as necessary
+      for its stated purpose, legitimate operational needs or legal
+      requirements.
+    </p>
+    <p>
+      Where applicable, you may request access to, correction of,
+      or deletion of your personal information by contacting us.
+      Some information may need to be retained where the law permits
+      or requires it.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>9. Children's Privacy</h2>
+    <p>
+      The application is not intended to collect personal information
+      from children in violation of applicable law. If you believe
+      a child has provided personal information inappropriately,
+      contact us so the matter can be reviewed.
+    </p>
+    <p>
+      Any age restrictions or parental-consent requirements applicable
+      to the actual service must be followed.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>10. Your Privacy Rights</h2>
+    <p>
+      Depending on your location and applicable law, you may have
+      rights to request access, correction, deletion, restriction
+      or a copy of certain personal information.
+    </p>
+    <p>
+      Contact us to submit a privacy-related request. We may need
+      to verify your identity before processing it.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>11. Changes to This Policy</h2>
+    <p>
+      This policy may be updated when application features, data
+      practices or legal requirements change. The latest version
+      will be published on this page with an updated revision date.
+    </p>
+      <p>
+      Please review this page periodically to stay informed.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>12. Disclaimer</h2>
+    <p>
+      The application and its content are provided subject to
+      applicable law and the terms governing the service. To the
+      extent legally permitted, we do not guarantee uninterrupted,
+      error-free or always-available operation.
+    </p>
+    <p>
+      Information presented through the application may not always
+      be complete, current or suitable for every purpose. Users are
+      responsible for evaluating information before relying on it.
+    </p>
+    <p>
+      Nothing in this disclaimer excludes or limits any consumer
+      rights, warranties or liabilities that cannot legally be
+      excluded or limited.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>13. Terms and Conditions</h2>
+    <p>
+      By using the application, you agree to use it lawfully and
+      responsibly. You must not misuse the service, attempt
+      unauthorized access, interfere with its operation or use it
+      to violate the rights of others.
+    </p>
+    <p>
+      Features may change, become unavailable or require updates.
+      Any purchases, subscriptions, refunds or cancellation rights
+      are governed by the applicable purchase terms and law.
+    </p>
+    <p>
+      These general terms are not a substitute for any separate
+      terms required for specific features or transactions.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>14. Contact Us</h2>
+    <p>
+      For privacy questions, data requests, concerns or support,
+      please contact us by email.
+    </p>
+    <p>
+      <a href="mailto:likharaayan026@gmail.com"
+         aria-label="Contact us by email">Contact Us</a>
+    </p>
+  </section>
+
+  <div class="notice">
+    <strong>Important Notice</strong>
+    <p>
+      Before publishing, customize this policy to accurately describe
+      the app's real data collection, sharing, retention, deletion
+      process, and third-party SDKs. This template is informational
+      and is not a guarantee of legal or app-store compliance.
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-title">Privacy Center</div>
+  <p>Your privacy deserves transparency and care.</p>
+  <p>© <span id="year">2026</span> · All rights reserved.</p>
+  <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top ↑</a></p>
+</footer>
+
+<button class="backtop" id="backtop"
+        aria-label="Scroll to top"
+        onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+const progress = document.getElementById("progress");
+const backtop = document.getElementById("backtop");
+
+function updatePage() {
+  const maxScroll =
+    document.documentElement.scrollHeight - window.innerHeight;
+
+  const percent = maxScroll > 0
+    ? (window.scrollY / maxScroll) * 100
+    : 0;
+
+  progress.style.width = percent + "%";
+  backtop.classList.toggle("show", window.scrollY > 350);
+}
+
+window.addEventListener("scroll", updatePage, { passive: true });
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.animationPlayState = "running";
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll(".card").forEach(card => {
+  card.style.animationPlayState = "paused";
+  observer.observe(card);
+});
+
+updatePage();
+</script>
+</body>
+</html>
